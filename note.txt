@@ -1,0 +1,9 @@
+配置host文件
+127.0.0.1       server1
+127.0.0.1       server2
+127.0.0.1       server3
+
+启动 Eureka Server Cluster
+java -jar ad-eureka-1.0-SNAPSHOT.jar --spring.profiles.active=server1
+java -jar ad-eureka-1.0-SNAPSHOT.jar --spring.profiles.active=server2
+java -jar ad-eureka-1.0-SNAPSHOT.jar --spring.profiles.active=server3
